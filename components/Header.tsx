@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ isDetailPage }) => {
                         </a>
                     ) : (
                         <>
-                            <a href="https://www.xinyitradinggroup.com/" className="flex items-center gap-3">
+                            <a href="https://xinyi-trading-group.vercel.app/" className="flex items-center gap-3">
                                 <img src="https://iili.io/FQiLFzQ.png" alt="Xinyi Trading Group Logo" className="h-12 w-auto" />
                                 <span className="text-xl font-bold font-display text-gray-100 hidden sm:inline">Xinyi Trading</span>
                             </a>
