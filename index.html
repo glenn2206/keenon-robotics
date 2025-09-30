@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Basic SEO Meta Tags -->
+  <title>Xinyi Trading Group - Management Consulting & Exclusive Market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Xinyi Trading Group provides intelligent robotics and trading solutions for hospitality, retail, logistics, and cleaning to boost productivity and redefine service. Explore our solutions like BellaBot, CC1, and more." />
+  <meta name="keywords"
+    content="Xinyi Trading Group, intelligent robots, general trading, delivery robot, cleaning robot, BellaBot, CC1, automation solutions" />
+  <meta name="author" content="Xinyi Trading Group" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://images2.imgbox.com/15/31/kXkUgLKy_o.png" type="image/png">
+  <link rel="shortcut icon" href="https://images2.imgbox.com/15/31/kXkUgLKy_o.png" type="image/png">
+  <link rel="apple-touch-icon" href="https://images2.imgbox.com/15/31/kXkUgLKy_o.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://images2.imgbox.com/15/31/kXkUgLKy_o.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://images2.imgbox.com/15/31/kXkUgLKy_o.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://keenon.xinyitradinggroup.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://keenon.xinyitradinggroup.com/" />
+  <meta property="og:title" content="Xinyi Trading Group - Intelligent Robotics for Smarter Businesses" />
+  <meta property="og:description"
+    content="Xinyi Trading Group provides intelligent robotics and trading solutions to boost productivity and redefine service. Explore our solutions like BellaBot, CC1, and more." />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1678830489396-397fb0700595?q=80&w=2070&auto=format&fit=crop" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://keenon.xinyitradinggroup.com/" />
+  <meta property="twitter:title" content="Xinyi Trading Group - Intelligent Robotics for Smarter Businesses" />
+  <meta property="twitter:description"
+    content="Xinyi Trading Group provides intelligent robotics and trading solutions to boost productivity and redefine service. Explore our solutions like BellaBot, CC1, and more." />
+  <meta property="twitter:image"
+    content="https://images.unsplash.com/photo-1678830489396-397fb0700595?q=80&w=2070&auto=format&fit=crop" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'trust-navy': '#000000',
+            'light-gray': '#121212',
+            'medium-gray': '#8892b0',
+            'corporate-gold': '#B9975B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Lora', 'serif'],
+          },
+          animation: {
+            'infinite-scroll': 'infinite-scroll 30s linear infinite',
+          },
+          keyframes: {
+            'infinite-scroll': {
+              from: { transform: 'translateX(0)' },
+              to: { transform: 'translateX(-100%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #000000;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Lora', 'Georgia', serif;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.17, 0.55, 0.55, 1), transform 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+      transition-delay: var(--delay, 0s);
+    }
+
+    [data-visible="true"] .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav-link-underline {
+      position: relative;
+    }
+
+    .nav-link-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #B9975B;
+      /* Main gold color */
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-link-underline:hover::after,
+    .nav-link-underline.active::after {
+      transform: scaleX(1);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .pop-in {
+      opacity: 0;
+    }
+
+    [data-visible="true"] .pop-in {
+      animation: popIn 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      animation-delay: var(--delay, 0s);
+    }
+
+    @keyframes gentle-bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+
+      50% {
+        transform: translateY(-15%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+    }
+
+    .animate-gentle-bounce {
+      animation: gentle-bounce 2s infinite;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.5s ease-out forwards;
+      animation-delay: 1.5s;
+    }
+
+    .filter-to-white {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    :root {
+      --color-bg-subtle: #121212;
+      --color-border: #374151;
+      --color-bg-input: #262626;
+      --color-text-primary: #E5E7EB;
+      --color-text-secondary: #A0A0A0;
+      --color-border-input: #404040;
+      --color-border-input-focus: #B9975B;
+      --color-accent: #CDA45E;
+      --color-accent-cta-bg: #B9975B;
+      --color-text-cta: #000000;
+      --color-accent-hover: rgba(185, 151, 91, 0.8);
+      --swiper-theme-color: var(--corporate-gold);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@17.0.2",
+    "react-dom": "https://esm.sh/react-dom@17.0.2",
+    "swiper": "https://esm.sh/swiper@11?deps=react@17.0.2",
+    "swiper/react": "https://esm.sh/swiper@11/react?deps=react@17.0.2",
+    "swiper/modules": "https://esm.sh/swiper@11/modules?deps=react@17.0.2",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "swiper/": "https://aistudiocdn.com/swiper@^12.0.2/"
+  }
+}
+</script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Xinyi Trading Group",
+  "url": "https://keenon.xinyitradinggroup.com/",
+  "logo": "https://images2.imgbox.com/15/31/kXkUgLKy_o.png",
+  "description": "Premier general trading company specializing in intelligent robotics and efficient supply chain solutions to help businesses grow.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-123-4567",
+    "contactType": "Customer Service",
+    "email": "info@xinyitradinggroup.com"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/keenon-robotics/",
+    "https://x.com/keenonrobotics",
+    "https://www.youtube.com/@keenonrobotics"
+  ] 
+}
+  </script>
+
+<link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-trust-navy">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
