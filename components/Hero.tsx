@@ -57,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToProducts }) => {
                             className="flex items-center justify-center lg:justify-start gap-4 md:gap-6 pop-in"
                             style={{ '--delay': '200ms' } as React.CSSProperties}
                         >
-                            <a href="https://xinyi-trading-group.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.xinyitradinggroup.com/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://iili.io/FQiLFzQ.png" alt="Xinyi Trading Group Logo" className="h-16 md:h-20 object-contain" />
                             </a>
                             <span className="text-4xl md:text-5xl font-light text-gray-400 mx-2">+</span>
